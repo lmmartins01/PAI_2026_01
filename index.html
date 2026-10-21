@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAI-IC ULSLO · Arranque do piloto · ESC 2026</title>
+<meta name="description" content="Apresentação de 20 minutos à equipa do PAI da Insuficiência Cardíaca da ULS Loures-Odivelas: arranque do piloto com 56 utentes da USF da Ramada e o que muda com as 2026 ESC Guidelines.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css" id="theme">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1F3A; --navy2:#122B4F; --ink:#F4F7FB; --muted:#A9B8CF;
+  --azul:#3A9BE0; --verde:#19C39A; --roxo:#9B6CF0; --amarelo:#F5C451; --coral:#FF6B6B; --laranja:#F39C3D;
+  --r-background-color:var(--navy);
+  --r-main-font:'Inter',system-ui,sans-serif; --r-heading-font:'Inter',system-ui,sans-serif;
+  --r-main-font-size:30px; --r-main-color:var(--ink); --r-heading-color:#fff;
+  --r-heading-text-transform:none; --r-heading-letter-spacing:-.01em; --r-heading-font-weight:800;
+  --r-heading1-size:2.1em; --r-heading2-size:1.45em; --r-heading3-size:1.05em;
+  --r-link-color:var(--azul); --r-link-color-hover:#7CC1F0; --r-selection-background-color:var(--azul);
+}
+.reveal{font-weight:400}
+.reveal .slides{text-align:left}
+.reveal .slides section{padding:0 18px;box-sizing:border-box}
+.reveal h1,.reveal h2,.reveal h3{margin:0 0 .45em;line-height:1.15}
+.reveal h2{color:#fff}
+.reveal p,.reveal li{line-height:1.38}
+.reveal ul{margin-left:1em}
+.reveal li{margin-bottom:.28em}
+.reveal small,.reveal .sm{font-size:.62em;color:var(--muted);line-height:1.35}
+.reveal .xs{font-size:.52em;color:var(--muted)}
+.reveal strong{color:#fff}
+.reveal .section-bg{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%)}
+/* kicker + tags */
+.kicker{display:inline-block;font-size:.55em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--verde);margin-bottom:.6em}
+.kicker.azul{color:var(--azul)}.kicker.roxo{color:var(--roxo)}.kicker.amarelo{color:var(--amarelo)}.kicker.coral{color:var(--coral)}
+.tag{display:inline-block;font-size:.5em;font-weight:700;padding:.15em .6em;border-radius:999px;background:rgba(255,255,255,.08);color:var(--muted);margin-left:.4em;vertical-align:middle}
+.cls{display:inline-block;font-size:.5em;font-weight:800;padding:.1em .5em;border-radius:6px;vertical-align:middle;margin-left:.3em;letter-spacing:.02em}
+.cls.I{background:var(--verde);color:#042}
+.cls.IIa{background:var(--amarelo);color:#432}
+.cls.IIb{background:var(--laranja);color:#421}
+.cls.III{background:var(--coral);color:#fff}
+/* grids & cards */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px 20px;font-size:.72em;line-height:1.35}
+.card h3{font-size:1.05em;margin-bottom:.4em;color:#fff}
+.card.azul{border-top:4px solid var(--azul)}.card.verde{border-top:4px solid var(--verde)}
+.card.roxo{border-top:4px solid var(--roxo)}.card.amarelo{border-top:4px solid var(--amarelo)}
+.card.coral{border-top:4px solid var(--coral)}.card.laranja{border-top:4px solid var(--laranja)}
+.card ul{margin:0 0 0 .9em}.card li{margin-bottom:.2em}
+/* big numbers */
+.num{font-size:2.6em;font-weight:800;line-height:1;letter-spacing:-.03em}
+.num.verde{color:var(--verde)}.num.azul{color:var(--azul)}.num.amarelo{color:var(--amarelo)}.num.coral{color:var(--coral)}.num.roxo{color:var(--roxo)}
+.numl{font-size:.6em;color:var(--muted);margin-top:.35em;line-height:1.3}
+/* tables */
+.reveal table{font-size:.6em;border-collapse:collapse;width:100%;margin:0}
+.reveal table th{background:rgba(58,155,224,.18);color:#fff;font-weight:700;text-align:left;padding:.45em .7em;border-bottom:2px solid var(--azul)}
+.reveal table td{padding:.42em .7em;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top}
+.reveal table tr:last-child td{border-bottom:none}
+.reveal table td:first-child{font-weight:700;color:#fff;white-space:nowrap}
+/* agenda */
+.agenda{list-style:none;margin:0;padding:0;font-size:.85em}
+.agenda li{display:grid;grid-template-columns:70px 1fr 90px;align-items:center;gap:16px;padding:.45em 0;border-bottom:1px solid rgba(255,255,255,.08);margin:0}
+.agenda .n{font-weight:800;color:var(--verde);font-size:1.1em}
+.agenda .t{text-align:right;color:var(--muted);font-size:.7em;font-weight:600}
+/* steps row */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:10px}
+.step{border-radius:14px;padding:14px 14px 12px;font-size:.58em;line-height:1.3;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);position:relative}
+.step b{display:block;font-size:1.15em;color:#fff;margin-bottom:.3em}
+.step .e{position:absolute;top:10px;right:12px;font-weight:800;font-size:1.3em;opacity:.35}
+.step.c1{border-left:5px solid var(--verde)}.step.c2{border-left:5px solid var(--azul)}.step.c3{border-left:5px solid var(--azul)}.step.c4{border-left:5px solid var(--roxo)}
+.step.c5{border-left:5px solid var(--amarelo)}.step.c6{border-left:5px solid var(--coral)}.step.c7{border-left:5px solid var(--laranja)}.step.c8{border-left:5px solid #9b9bb5}
+/* flow */
+.flow{display:flex;align-items:stretch;gap:10px;font-size:.62em}
+.flow .box{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px;line-height:1.3}
+.flow .box b{display:block;color:#fff;margin-bottom:.25em}
+.flow .arr{align-self:center;color:var(--muted);font-size:1.6em}
+.box.v{border-color:var(--verde)}.box.a{border-color:var(--azul)}.box.y{border-color:var(--amarelo)}.box.r{border-color:var(--coral)}
+/* pill rows */
+.pill{display:inline-block;background:rgba(255,255,255,.08);border-radius:999px;padding:.25em .8em;font-size:.6em;margin:.15em .2em .15em 0;color:#fff}
+.pill.v{background:rgba(25,195,154,.22);border:1px solid var(--verde)}.pill.a{background:rgba(58,155,224,.22);border:1px solid var(--azul)}
+.pill.p{background:rgba(155,108,240,.22);border:1px solid var(--roxo)}.pill.y{background:rgba(245,196,81,.22);border:1px solid var(--amarelo)}
+.roles{gap:12px}.roles .card{font-size:.6em;padding:12px 16px}.roles .card h3{margin-bottom:.25em}.roles .card li{margin-bottom:.1em}
+.footer-src{margin-top:14px;font-size:.42em;color:var(--muted);opacity:.85;line-height:1.3}
+.reveal table.plan{font-size:.54em}.reveal table.plan th,.reveal table.plan td{padding:.32em .55em}.reveal table.plan td:first-child{white-space:normal}
+.reveal table.grid-roles td:nth-child(n+2):nth-child(-n+5){text-align:center;font-weight:700;color:var(--verde);font-size:1.25em;line-height:1}
+.siglas{margin-top:8px;padding-top:6px;border-top:1px solid rgba(255,255,255,.12);font-size:.40em;color:var(--muted);line-height:1.35}.siglas b{color:#fff;font-weight:600}
+.hero-title{font-size:2.3em;font-weight:800;line-height:1.08;letter-spacing:-.02em}
+.hero-sub{font-size:.95em;color:var(--muted);margin-top:.5em}
+.logo-row{display:flex;gap:14px;align-items:center;margin-top:1.4em;font-size:.6em;color:var(--muted)}
+.logo-row span{padding:.35em .8em;border:1px solid rgba(255,255,255,.18);border-radius:8px}
+.cols{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+.quote{font-size:.9em;font-style:italic;color:#fff;border-left:4px solid var(--verde);padding-left:.8em;line-height:1.35}
+.reveal .progress{color:var(--verde)}
+.reveal .controls{color:var(--verde)}
+.reveal .slide-number{background:transparent;color:var(--muted);font-size:14px}
+mark{background:rgba(245,196,81,.3);color:#fff;padding:0 .2em;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- 1 · Título -->
+<section class="section-bg" data-timing="60">
+  <span class="kicker">ULS Loures-Odivelas · Percurso Assistencial Integrado</span>
+  <div class="hero-title">Insuficiência Cardíaca:<br>arranca o piloto.</div>
+  <div class="hero-sub">56 utentes da USF da Ramada · PAI-IC atualizado às <strong>2026 ESC Guidelines</strong></div>
+  <div class="logo-row"><span>USF da Ramada</span><span>Hospital Beatriz Ângelo</span><span>Equipa PAI-IC</span></div>
+  <p class="xs" style="margin-top:2.2em">Reunião de equipa · Dr. Luís Martins</p>
+  <aside class="notes">[0:00–1:00] Boas-vindas. Objetivo da sessão: alinhar toda a equipa no arranque do piloto e no que muda com as guidelines de agosto de 2026. Pedir para guardar perguntas para o fim (3 min reservados).</aside>
+</section>
+
+<!-- 2 · Agenda -->
+<section data-timing="45">
+  <span class="kicker azul">Agenda</span>
+  <h2>O que vamos ver</h2>
+  <ul class="agenda">
+    <li><span class="n">01</span><span>Porquê agora — números da ULSLO e o piloto de 56 utentes</span><span class="t">3 min</span></li>
+    <li><span class="n">02</span><span>O que muda com as 2026 ESC Guidelines (8 mudanças com impacto no terreno)</span><span class="t">7 min</span></li>
+    <li><span class="n">03</span><span>O percurso em 8 etapas e o calendário de seguimento</span><span class="t">3 min</span></li>
+    <li><span class="n">04</span><span>Quem faz o quê — médico e enfermeiro, CSP e hospital</span><span class="t">3 min</span></li>
+    <li><span class="n">05</span><span>Operacionalização: plano de 12 semanas, GPT assistente, scores, papéis, pontos a fechar e KPIs</span><span class="t">7 min</span></li>
+    <li><span class="n">—</span><span>Perguntas</span><span class="t">3 min</span></li>
+  </ul>
+  <aside class="notes">[1:00–1:45] Correr a agenda. Sublinhar que o bloco 02 é a novidade de 2026 e o bloco 05 é o que a equipa vai fazer nas próximas 12 semanas. Se faltar tempo, os slides 20–24 podem ficar como anexo para leitura.</aside>
+</section>
+
+<!-- 3 · Porquê agora -->
+<section data-timing="90">
+  <span class="kicker">01 · Porquê agora</span>
+  <h2>A IC na ULSLO em números</h2>
+  <div class="grid g4" style="margin-top:.4em">
+    <div><div class="num azul">2 470</div><div class="numl">utentes com diagnóstico de IC na ULSLO (2024)</div></div>
+    <div><div class="num coral">€12,99M</div><div class="numl">custo anual associado (2024) — hospitalizações, SU e MCDT a otimizar</div></div>
+    <div><div class="num amarelo">15</div><div class="numl">indicadores do dashboard · 26 ações operacionais · 5 eixos</div></div>
+    <div><div class="num verde">56</div><div class="numl">utentes com IC da USF da Ramada — a primeira coorte do PAI</div></div>
+  </div>
+  <div class="card" style="margin-top:1.1em">
+    <strong>Porque é que começamos agora?</strong> As 2026 ESC Guidelines (publicadas a 28 de agosto de 2026) reescrevem a classificação, o diagnóstico e o tratamento. O PAI v4 (junho 2026) ainda assentava nas ESC 2021. <mark>O piloto arranca já alinhado com o novo referencial</mark> — não vamos ter de refazer nada daqui a seis meses.
+  </div>
+  <div class="footer-src">Fontes: Dashboard KPIs PAI-IC ULSLO · PAI-IC v4 (2026.1) · McDonagh et al., Eur Heart J 2026 (ehag100)</div>
+  <aside class="notes">[1:45–3:15] Os 2 470 e os €12,99M são do dashboard oficial. O piloto são 56 utentes com diagnóstico codificado de IC na USF da Ramada. Mensagem: pequena escala, máximo rigor, aprender antes de escalar às outras USF (Magnólia em perspetiva).</aside>
+</section>
+
+<!-- 4 · O piloto -->
+<section data-timing="90">
+  <span class="kicker">01 · O piloto</span>
+  <h2>56 utentes · o que vamos fazer com cada um</h2>
+  <div class="flow">
+    <div class="box v"><b>1. Confirmar e fenotipar</b>Diagnóstico revisto: FEVE no último eco, NT-proBNP, estádio (C ou D), fenótipo IC-FEr / IC-FEp</div>
+    <div class="arr">›</div>
+    <div class="box a"><b>2. Estratificar</b>NYHA, LIFE-HF ou LIFE-Preserved, comorbilidades, fragilidade, I NEED HELP</div>
+    <div class="arr">›</div>
+    <div class="box y"><b>3. Otimizar FMT</b>Gap de terapêutica fundamental; plano de titulação 1–2 sem; Hospital de Dia quando necessário</div>
+    <div class="arr">›</div>
+    <div class="box r"><b>4. Plano e inclusão</b>Plano individual, folheto semáforo, consulta de enfermagem trimestral, inclusão no PAI e no dashboard</div>
+  </div>
+  <div class="grid g3" style="margin-top:1em">
+    <div class="card azul"><h3>Quem</h3>Médico e enfermeiro de família da USF da Ramada + Consulta de IC / Hospital de Dia do HBA (MI) + UCC/ECSCP quando aplicável.</div>
+    <div class="card verde"><h3>Quando</h3>Revisão dos 56 processos nas primeiras <strong>8 semanas</strong> após a formação; consultas de inclusão programadas por ordem de risco (NYHA, HFH recente, NT-proBNP).</div>
+    <div class="card amarelo"><h3>Como medimos</h3>KPIs do dashboard desde o dia 1: % fenotipados, % com FMT completa, % com plano, HFH/SU a 90 dias, PROMs (KCCQ-12).</div>
+  </div>
+  <aside class="notes">[3:15–4:45] Os quatro passos aplicam-se a todos os 56. Ordem de prioridade: quem teve internamento/SU nos últimos 12 meses e NYHA III primeiro. Referir que a revisão de processos pode ser feita em pares médico-enfermeiro.</aside>
+</section>
+
+<!-- 5 · Secção ESC 2026 -->
+<section class="section-bg" data-timing="20">
+  <span class="kicker azul">02</span>
+  <h1>O que muda com as<br>2026 ESC Guidelines</h1>
+  <p class="sm">8 mudanças com impacto direto na prática dos CSP e do hospital. Referencial: McDonagh TA et al. <em>2026 ESC Guidelines for the management of heart failure</em>. Eur Heart J 2026; doi:10.1093/eurheartj/ehag100.</p>
+  <aside class="notes">[4:45–5:05] Transição. "Vou passar pelas 8 mudanças que afetam o que fazemos no dia a dia; o resto está no documento e no percurso interativo."</aside>
+</section>
+
+<!-- 6 · Fenótipos -->
+<section data-timing="75">
+  <span class="kicker azul">02 · Mudança 1</span>
+  <h2>De 3 para 2 fenótipos — a IC-FEmr desaparece</h2>
+  <div class="grid g2">
+    <div class="card azul"><h3>IC-FEr · FEVE &lt;50%</h3>
+      Absorve a antiga "fração de ejeção ligeiramente reduzida" (41–49%).<br>
+      <span class="pill a">4 pilares da FMT</span><span class="pill a">LIFE-HF</span>
+      <p class="xs" style="margin-top:.6em">Racional: os ensaios dos 4 pilares mostram benefício consistente até 50%; simplifica a decisão terapêutica.</p>
+    </div>
+    <div class="card verde"><h3>IC-FEp · FEVE ≥50%</h3>
+      Exige <strong>alteração estrutural/funcional</strong> (Tab. 10: LVMI, RWT &gt;0,42, AE &gt;34/40 mL/m², E/e′ &gt;9, PSAP &gt;35 mmHg) <strong>e</strong> péptidos natriuréticos elevados.<br>
+      <span class="pill v">ARM + iSGLT2</span><span class="pill v">LIFE-Preserved</span>
+    </div>
+  </div>
+  <div class="card" style="margin-top:.9em;font-size:.66em"><strong>Impacto no PAI:</strong> o Quadro 3 do documento e a Etapa 2 do percurso passam a ter 2 fenótipos; nos 56 utentes, quem estava codificado como "FEmr" passa a IC-FEr e deve ter os 4 pilares. Doentes com FEVE recuperada mantêm a FMT <span class="cls I">I C</span>.</div>
+  <div class="footer-src">ESC 2026 · Secção 3 (p.16), Tab. 10 (p.25) · Rec. "manter FMT com FEVE melhorada" (Classe I, C)</div>
+  <aside class="notes">[5:05–6:20] A mudança mais visível. Realçar: FEVE 41–49% passa a ser IC-FEr e tem indicação para os quatro pilares. Na IC-FEp é preciso o critério estrutural + PN — não basta FEVE normal com dispneia.</aside>
+</section>
+
+<!-- 7 · Estádios -->
+<section data-timing="60">
+  <span class="kicker azul">02 · Mudança 2</span>
+  <h2>Estádios A–D: a IC começa antes dos sintomas</h2>
+  <div class="steps" style="grid-template-columns:repeat(4,1fr)">
+    <div class="step c1"><span class="e">A</span><b>Em risco</b>HTA, DM, obesidade, DRC, doença CV, cardiotóxicos — sem alteração cardíaca.<br><span class="pill v">SCORE2-HF · SMART2-HF</span></div>
+    <div class="step c2"><span class="e">B</span><b>Pré-IC</b>Alteração estrutural/funcional, PN ou troponina elevados — <em>sem sintomas</em>.<br><span class="pill a">IECA/ARA se FEVE ≤40% I A · BB se &lt;50% I B1</span></div>
+    <div class="step c3"><span class="e">C</span><b>IC sintomática</b>Sintomas atuais ou prévios. Fenotipar, FMT, programa de IC.<br><span class="pill a">LIFE-HF · LIFE-Preserved</span></div>
+    <div class="step c4"><span class="e">D</span><b>IC avançada</b>Sintomas refratários apesar de FMT otimizada. Referenciar precocemente.<br><span class="pill p">I NEED HELP</span></div>
+  </div>
+  <div class="card" style="margin-top:.9em;font-size:.66em"><strong>Prevenção com classe I A:</strong> PAS &lt;130 mmHg · iSGLT2 na DM2 com risco CV ou DRC · finerenona na DM2 + DRC · estilo de vida (I C) · estatinas (IIa A) · GLP-1 RA na DM2 com ≥1 fator de risco (IIa A). <strong>Impacto no PAI:</strong> nova linha de ação na Etapa 1 (CSP) para estádios A e B — é aqui que a MGF mais pesa.</div>
+  <div class="footer-src">ESC 2026 · Fig. 2 (p.17) · Rec. Tab. 1–2 (p.19–21)</div>
+  <aside class="notes">[6:20–7:20] Os estádios A e B são território dos CSP. Os 56 utentes são todos C ou D, mas a USF tem centenas de A/B. Não vamos rastrear ativamente no piloto; vamos incorporar as recomendações nas consultas de DM/HTA/DRC.</aside>
+</section>
+
+<!-- 8 · Diagnóstico -->
+<section data-timing="75">
+  <span class="kicker azul">02 · Mudança 3</span>
+  <h2>Diagnóstico: NT-proBNP ajustado à idade</h2>
+  <div class="cols">
+    <div>
+      <table>
+        <tr><th>Idade</th><th>NT-proBNP "IC provável"</th><th>Rule-out</th></tr>
+        <tr><td>&lt;50 anos</td><td>≥125 pg/mL</td><td rowspan="3">&lt;125 pg/mL<br><span class="xs">(BNP &lt;35)</span></td></tr>
+        <tr><td>50–74 anos</td><td>≥250 pg/mL</td></tr>
+        <tr><td>≥75 anos</td><td>≥500 pg/mL</td></tr>
+      </table>
+      <p class="sm" style="margin-top:.8em">Eco em <strong>≤2 semanas</strong> se NT-proBNP &gt;2000 pg/mL. Na IC descompensada: rule-out &lt;300; &gt;5000 = muito alto risco.</p>
+    </div>
+    <div class="card azul"><h3>Painel analítico inicial <span class="cls I">I C</span></h3>
+      <ul><li>Hemograma, ionograma, função renal com <strong>TFGe + UACR</strong></li><li>Função hepática e tiroideia</li><li>HbA1c, perfil lipídico</li><li><strong>Ferro: TSAT e ferritina</strong></li><li>ECG 12 derivações; Rx tórax</li></ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:.8em;font-size:.66em"><strong>Impacto no PAI:</strong> o algoritmo da Etapa 1 deixa de ter o limiar único de 125 pg/mL; o KPI 6 passa a medir "NT-proBNP ajustado à idade + eco com FEVE". Entre 125 e o limiar da idade: eco se a suspeita se mantiver alta.</div>
+  <div class="footer-src">ESC 2026 · Fig. 4 (p.23) · Secção 9.1 (p.42)</div>
+  <aside class="notes">[7:20–8:35] Ponto prático para a MGF: o pedido de NT-proBNP continua a ser o gatilho; o que muda é a leitura. Uma pessoa de 80 anos com 300 pg/mL já não é "IC provável" — precisa de contexto clínico. Lembrar TSAT/ferritina no painel inicial.</aside>
+</section>
+
+<!-- 9 · FMT IC-FEr -->
+<section data-timing="75">
+  <span class="kicker azul">02 · Mudança 4</span>
+  <h2>IC-FEr: os 4 pilares são <em>terapêutica fundamental</em> (FMT)</h2>
+  <div class="grid g4">
+    <div class="card azul"><h3>IECA / ARNI / ARA</h3>Sacubitril-valsartan 49/51 → 97/103 mg bid. ARNI preferido quando possível.</div>
+    <div class="card azul"><h3>Beta-bloqueador</h3>Bisoprolol 1,25 → 10 mg · carvedilol 3,125 → 25 mg bid. Reduzir só se hipoperfusão.</div>
+    <div class="card azul"><h3>ARM</h3>Espironolactona 12,5–25 → 50 mg · eplerenona 25 → 50 mg.</div>
+    <div class="card azul"><h3>iSGLT2</h3>Dapagliflozina ou empagliflozina 10 mg — sem titulação, iniciar cedo.</div>
+  </div>
+  <div class="grid g2" style="margin-top:.9em">
+    <div class="card verde" style="font-size:.66em"><strong>Como:</strong> iniciar as 4 classes em simultâneo ou em dias (doses baixas) · titular a cada <strong>1–2 semanas</strong> até dose-alvo ou tolerância <span class="cls I">I C</span> · nova nomenclatura: <strong>GDMT = FMT + AMT</strong> (terapêutica adicional) · <strong>GDIT</strong> = dispositivos.</div>
+    <div class="card amarelo" style="font-size:.66em"><strong>Adicionais (AMT):</strong> glicosídeo (digoxina) FEVE ≤40% <span class="cls IIa">IIa B1</span> · vericiguat FEVE &lt;45% pós-agravamento <span class="cls IIb">IIb B1</span> · ivabradina RS ≥70 bpm <span class="cls IIa">IIa</span> · ferro EV se défice <span class="cls I">I B1</span>.</div>
+  </div>
+  <div class="footer-src">ESC 2026 · Secção 6, Fig. 3 (p.18), Tab. 11 doses (p.36–37)</div>
+  <aside class="notes">[8:35–9:50] O KPI 10 do dashboard mede isto. Pergunta frequente: "e se a TA for baixa?" — priorizar iSGLT2 e ARM (pouco efeito na TA), e titular BB/ARNI mais devagar. O Hospital de Dia é o nosso acelerador de titulação.</aside>
+</section>
+
+<!-- 10 · FMT IC-FEp -->
+<section data-timing="60">
+  <span class="kicker azul">02 · Mudança 5</span>
+  <h2>IC-FEp: pela primeira vez, dois fármacos com classe I A</h2>
+  <div class="grid g3">
+    <div class="card verde"><h3>ARM <span class="cls I">I A</span></h3>Espironolactona/eplerenona (sMRA) <strong>ou finerenona</strong> (nsMRA) 10–20 → 20–40 mg conforme TFGe. Vigiar K⁺ e função renal.</div>
+    <div class="card verde"><h3>iSGLT2 <span class="cls I">I A</span></h3>Dapagliflozina / empagliflozina 10 mg. Reduzem hospitalização por IC e morte CV na FEVE ≥50%.</div>
+    <div class="card amarelo"><h3>Obesidade (IMC ≥30) <span class="cls IIa">IIa B1</span></h3>Semaglutido ou tirzepatido em doentes com FEVE ≥45% — melhoria de sintomas e capacidade funcional. Cirurgia bariátrica <span class="cls IIb">IIb</span>.</div>
+  </div>
+  <div class="card" style="margin-top:.9em;font-size:.66em"><strong>Despromovidos:</strong> IECA/ARA/ARNI na IC-FEp <span class="cls IIb">IIb C</span>. <strong>Impacto no PAI:</strong> a secção 16.11 do documento e a Etapa 3 passam a ter ARM + iSGLT2 como padrão; o KPI 10 passa a incluir a IC-FEp com ARM + iSGLT2. Nos 56 utentes, a IC-FEp será provavelmente a maior fatia — idosos, HTA, FA, obesidade.</div>
+  <div class="footer-src">ESC 2026 · Secção 7 · Rec. IC-FEp (p.39–40) · Secção 12 obesidade</div>
+  <aside class="notes">[9:50–10:50] A IC-FEp era o "deserto terapêutico". Agora há dois pilares com evidência A. A finerenona é nova nesta indicação (FINEARTS-HF). GLP-1/tirzepatido: atenção ao custo e acesso — sinalizar como ponto a esclarecer com a farmácia/CA.</aside>
+</section>
+
+<!-- 11 · DHF -->
+<section data-timing="75">
+  <span class="kicker azul">02 · Mudança 6</span>
+  <h2>"IC descompensada" substitui "IC aguda" — e tem 3 fases</h2>
+  <div class="flow">
+    <div class="box r"><b>Fase 1 · Inicial (SU / primeiras horas)</b>4 apresentações: IC esquerda, IC direita, edema agudo do pulmão, choque (SCAI A–E). Diurético EV precoce; Na⁺ urinário <span class="cls IIb">IIb</span>; acetazolamida/HCTZ se resistência <span class="cls IIa">IIa B1</span>.</div>
+    <div class="arr">›</div>
+    <div class="box y"><b>Fase 2 · Estabilização (internamento)</b>Iniciar/retomar FMT; <strong>iSGLT2 intra-hospitalar</strong> após estabilização <span class="cls I">I B1</span>; ferro EV pré-alta; tratar precipitantes e comorbilidades.</div>
+    <div class="arr">›</div>
+    <div class="box v"><b>Fase 3 · Pré-alta e pós-alta</b>Excluir congestão residual <span class="cls I">I C</span>; checklist pré-alta; consulta precoce; titulação intensiva em <strong>6 semanas</strong> (STRONG-HF) <span class="cls I">I B2</span>; reabilitação <span class="cls IIa">IIa B1</span>.</div>
+  </div>
+  <div class="card" style="margin-top:.9em;font-size:.66em"><strong>Impacto no PAI:</strong> as Etapas 5–7 do percurso foram renomeadas e reorganizadas por fases; a Etapa 7 (pós-alta) passa a ter a janela de 6 semanas como meta explícita, com partilha CSP ↔ Hospital de Dia. Rule-out na DHF: NT-proBNP &lt;300 pg/mL.</div>
+  <div class="footer-src">ESC 2026 · Secção 9, Fig. 12 (p.45), Fig. 14 checklist pré-alta</div>
+  <aside class="notes">[10:50–12:05] A palavra "aguda" sai porque a maioria dos episódios são agravamentos de IC crónica. STRONG-HF: visitas a 1, 2, 3 e 6 semanas com titulação rápida. Isto exige coordenação do enfermeiro gestor do internamento com a USF — é um dos pontos mais exigentes do piloto.</aside>
+</section>
+
+<!-- 12 · IC avançada -->
+<section data-timing="75">
+  <span class="kicker roxo">02 · Mudança 7</span>
+  <h2>IC avançada: referenciar <em>cedo</em>, não no fim</h2>
+  <div class="cols">
+    <div class="card roxo"><h3>Critérios (Tab. 14)</h3>
+      <ul><li>NYHA III–IV persistente apesar de FMT otimizada</li><li>FEVE ≤30%, disfunção VD grave, valvulopatia não corrigível ou IC-FEp com PN muito elevados</li><li>≥2 visitas não planeadas / hospitalizações por IC em 12 meses, ou ≥1 com inotrópicos</li><li>6MWT &lt;300 m ou pVO₂ &lt;12–14 mL/kg/min</li></ul>
+    </div>
+    <div>
+      <div class="card amarelo"><h3>Gatilhos rápidos (Tab. 15)</h3><strong>Regra dos 3</strong> (≥1): hospitalização por IC ≥2/ano ou ≥1 com inotrópicos · resistência a diuréticos · intolerância a fármacos neuro-hormonais com síndrome cardiorrenal.<br><strong>I NEED HELP</strong> (≥1): <b>I</b>notrópicos · <b>N</b>YHA III/IV ou PN persistentemente altos · <b>E</b>nd-organ (rim/fígado) · <b>E</b>F &lt;20% ou VD pobre · <b>D</b>esfibrilador: choques · <b>H</b>ospitalizações &gt;1 · <b>E</b>scalada de diuréticos · <b>L</b>ow BP / FC alta · <b>P</b>rognostic medication: intolerância ou redução.</div>
+      <p class="sm" style="margin-top:.6em">Consulta precoce em centro de IC avançada <span class="cls I">I A</span> · CPET/cateterismo direito <span class="cls I">I C</span> · planeamento antecipado de cuidados <span class="cls I">I B1</span> · cuidados paliativos integrados <span class="cls I">I B2</span>.</p>
+    </div>
+  </div>
+  <div class="footer-src">ESC 2026 · Secção 8 · Tab. 14–16, Fig. 16 (p.52–54) · Secção 11.6.2 paliativos</div>
+  <aside class="notes">[12:05–13:20] O protocolo oficial de referenciação IC avançada da ULSLO está a ser formalizado (documento separado). Mensagem: "I NEED HELP" deve ser corrido em todas as consultas de revisão dos estádios C. Paliativos não excluem referenciação — correm em paralelo.</aside>
+</section>
+
+<!-- 13 · Comorbilidades -->
+<section data-timing="60">
+  <span class="kicker azul">02 · Mudança 8</span>
+  <h2>Comorbilidades: o que mudou de concreto</h2>
+  <table>
+    <tr><th>Comorbilidade</th><th>Novidade 2026</th><th>Classe</th><th>Quem atua</th></tr>
+    <tr><td>Défice de ferro</td><td>Nova definição: <strong>TSAT &lt;20%</strong> (ferritina deixa de ser critério isolado). Ferro EV na IC-FEr sintomática.</td><td><span class="cls I">I B1</span> sintomas · <span class="cls IIa">IIa B1</span> HFH</td><td>MGF rastreia; HD/HBA administra</td></tr>
+    <tr><td>Fibrilhação auricular</td><td>BB 1.ª linha para controlo de frequência; digoxina adjuvante; ablação em casos selecionados.</td><td><span class="cls I">I C</span> · <span class="cls IIa">IIa</span></td><td>MGF + Cardiologia</td></tr>
+    <tr><td>Obesidade</td><td>Semaglutido / tirzepatido na IC-FEp/FEVE ≥45% com IMC ≥30.</td><td><span class="cls IIa">IIa B1</span></td><td>MGF + MI</td></tr>
+    <tr><td>DM2 / DRC</td><td>iSGLT2 e finerenona — prevenção e tratamento; TFGe + UACR anual.</td><td><span class="cls I">I A</span></td><td>MGF</td></tr>
+    <tr><td>Vacinação</td><td>Gripe, pneumocócica, COVID-19, VSR conforme elegibilidade.</td><td><span class="cls IIa">IIa C</span></td><td>Enfermagem CSP</td></tr>
+    <tr><td>AINE</td><td>Evitar — agravam congestão e função renal.</td><td><span class="cls III">III B2</span></td><td>Todos (reconciliação)</td></tr>
+    <tr><td>Depressão · ansiedade · fragilidade</td><td>Rastreio sistemático e intervenção (exercício, apoio psicossocial).</td><td><span class="cls IIa">IIa C</span></td><td>Enfermagem + MGF</td></tr>
+  </table>
+  <div class="footer-src">ESC 2026 · Secção 12 (comorbilidades CV e não-CV) · Secção 11 (programa multidisciplinar, vacinação)</div>
+  <aside class="notes">[13:20–14:20] Não ler a tabela toda. Destacar ferro (TSAT &lt;20%), AINE (classe III — reconciliação terapêutica pela enfermagem) e vacinação (ação direta da enfermagem na USF).</aside>
+</section>
+
+<!-- 14 · Scores -->
+<section data-timing="60">
+  <span class="kicker amarelo">02 · Ferramenta transversal</span>
+  <h2>Scores de risco: para apoiar a decisão partilhada, não para decidir por nós</h2>
+  <div class="grid g4">
+    <div class="card verde"><h3>Estádios A–B</h3><strong>SCORE2-HF</strong> (sem doença ASCVD) · <strong>SMART2-HF</strong> (com ASCVD). Risco de IC a 10 anos. <em>MGF.</em></div>
+    <div class="card azul"><h3>Estádio C</h3><strong>LIFE-HF</strong> (FEVE ≤40%) · <strong>LIFE-Preserved</strong> (≥50%) · MAGGIC · Seattle HF Model. <em>MGF + Consulta IC.</em></div>
+    <div class="card coral"><h3>Descompensação</h3><strong>EHMRG30-ST</strong> no SU (alta vs internamento) · NT-proBNP &gt;5000 · <strong>LACE</strong> na alta (readmissão). <em>SU + internamento.</em></div>
+    <div class="card roxo"><h3>Estádio D · paliativos</h3><strong>I NEED HELP</strong> · Regra dos 3 · INTERMACS / SCAI · <strong>NECPAL</strong> para necessidades paliativas. <em>Consulta IC + ECSCP.</em></div>
+  </div>
+  <p class="sm" style="margin-top:.9em">As guidelines não fixam limiares terapêuticos para nenhum score: servem para <strong>comunicar risco ao doente</strong>, priorizar seguimento e decidir referenciação. A tabela completa (como usar · por quem · quando) segue no documento de operacionalização.</p>
+  <div class="footer-src">ESC 2026 · Secção 4 (prognóstico), Suplemento Tab. S1 · Secção 9.1 EHMRG30-ST</div>
+  <aside class="notes">[14:20–15:20] Dois scores novos para a MGF: SCORE2-HF e LIFE-HF/Preserved. No piloto vamos calcular LIFE-HF ou LIFE-Preserved para todos os 56 na consulta de inclusão — serve para ordenar o seguimento.</aside>
+</section>
+
+<!-- 15 · Secção percurso -->
+<section class="section-bg" data-timing="15">
+  <span class="kicker">03</span>
+  <h1>O percurso em 8 etapas</h1>
+  <p class="sm">Percurso Assistencial Integrado · versão 2026.2 · disponível em <a href="https://lmmartins01.github.io/PAI_2026/">lmmartins01.github.io/PAI_2026</a> com algoritmos, simulador de caso e botão "O que muda com as ESC 2026".</p>
+  <aside class="notes">[15:20–15:35] Transição rápida. Convidar a abrir o link no telemóvel.</aside>
+</section>
+
+<!-- 16 · 8 etapas -->
+<section data-timing="90">
+  <span class="kicker">03 · Percurso</span>
+  <h2>Da prevenção aos cuidados paliativos</h2>
+  <div class="steps">
+    <div class="step c1"><span class="e">1</span><b>Prevenção e suspeita</b>Estádios A–B · NT-proBNP por idade · painel analítico · infografia QR para o utente</div>
+    <div class="step c2"><span class="e">2</span><b>Diagnóstico e fenotipagem</b>Eco ≤2 sem · IC-FEr / IC-FEp · estádio C · LIFE-HF/Preserved · inclusão no PAI</div>
+    <div class="step c3"><span class="e">3</span><b>Tratamento e titulação</b>FMT · 1–2 semanas · Hospital de Dia · ferro · GLP-1 se obesidade</div>
+    <div class="step c4"><span class="e">4</span><b>Doente estável</b>Enfermagem trimestral · revisão médica 6–12 m · educação · semáforo · vacinação</div>
+    <div class="step c5"><span class="e">5</span><b>Instável no domicílio</b>DHF ligeira · diurético flexível · contacto CSP ou Consulta IC em 48 h · rule-out &lt;300</div>
+    <div class="step c6"><span class="e">6</span><b>SU e internamento</b>3 fases · iSGLT2 intra-hospitalar · checklist pré-alta · LACE · enfermeiro gestor</div>
+    <div class="step c7"><span class="e">7</span><b>Pós-alta</b>Consulta ≤7 dias · 6 semanas STRONG-HF · reabilitação · telemonitorização</div>
+    <div class="step c8"><span class="e">8</span><b>IC avançada e paliativos</b>I NEED HELP · centro IC avançada I A · NECPAL · ECSCP · ACP · 3–6 m</div>
+  </div>
+  <aside class="notes">[15:35–17:05] Percorrer as 8 etapas com uma frase cada. Realçar as etapas 4 e 7 como as de maior volume de trabalho para a USF, e a 6 como a de maior dependência do hospital.</aside>
+</section>
+
+<!-- 17 · Seguimento -->
+<section data-timing="60">
+  <span class="kicker">03 · Calendário</span>
+  <h2>Frequência mínima de seguimento (Fig. 22 ESC 2026 + PAI)</h2>
+  <table>
+    <tr><th>Estádio</th><th>Revisão médica</th><th>Por quem</th><th>O que inclui</th><th>Enfermagem (PAI)</th></tr>
+    <tr><td>A · em risco</td><td>3–5 anos</td><td>MGF</td><td>Fatores de risco, SCORE2-HF/SMART2-HF, PA &lt;130</td><td>Programa DM/HTA habitual</td></tr>
+    <tr><td>B · pré-IC</td><td>1 ano</td><td>MGF (± Cardiologia)</td><td>Eco, PN, FMT preventiva se FEVE ≤40%</td><td>Anual</td></tr>
+    <tr><td>C · sintomática</td><td>6–12 meses</td><td>Consulta IC / MGF</td><td>Exame, ECG, eco, análises (TFGe, UACR, ferro, K⁺), CIED, NYHA, LIFE, KCCQ-12, I NEED HELP; se deteriora: CPET / RHC / referenciar</td><td><strong>Trimestral</strong></td></tr>
+    <tr><td>D · avançada</td><td>3–6 meses</td><td>Centro IC avançada · Consulta IC · MGF · ECSCP</td><td>Reavaliação de elegibilidade LVAD/transplante, sintomas, ACP, NECPAL</td><td>Mensal / conforme plano</td></tr>
+  </table>
+  <div class="footer-src">ESC 2026 · Fig. 22 (p.73) · PAI-IC ULSLO Etapa 4</div>
+  <aside class="notes">[17:05–18:05] A enfermagem trimestral é a espinha dorsal do PAI nos CSP e é o que mais nos distingue das guidelines "puras". Nos 56 utentes isto são ~19 consultas de enfermagem por mês.</aside>
+</section>
+
+<!-- 18 · Quem faz o quê -->
+<section data-timing="90">
+  <span class="kicker roxo">04 · Papéis</span>
+  <h2>Quem avalia o quê</h2>
+  <div class="grid g2 roles">
+    <div class="card verde"><h3>CSP · Enfermeiro de família (trimestral)</h3>
+      <ul><li>Peso, PA, FC, FR, SpO₂, edemas; sinais de alarme (semáforo)</li><li>Adesão e reconciliação terapêutica (AINE!), autogestão de diuréticos</li><li>Educação: sal, líquidos, exercício, vacinação, cessação tabágica</li><li>KCCQ-12, fragilidade, humor; literacia</li><li>Aciona médico / Consulta IC se agravamento</li></ul></div>
+    <div class="card azul"><h3>CSP · Médico de família (6–12 m + a pedido)</h3>
+      <ul><li>Sintomas, NYHA, exame, precipitantes</li><li>Análises: TFGe, UACR, K⁺, Na⁺, ferro (TSAT), HbA1c, NT-proBNP</li><li>Gap de FMT e titulação; comorbilidades CV e não-CV</li><li>LIFE-HF / LIFE-Preserved; I NEED HELP</li><li>Referencia: Consulta IC, HD, ECSCP; prevenção A/B</li></ul></div>
+    <div class="card coral"><h3>Hospital · Enfermeiro (HD · internamento · gestor)</h3>
+      <ul><li>Fases da DHF; balanço hídrico, peso diário, Na⁺ urinário</li><li>Titulação supervisionada no HD; administração de ferro EV</li><li>Checklist pré-alta; LACE; ensino e articulação com USF/UCC</li><li>Telemonitorização e contacto 48–72 h pós-alta</li></ul></div>
+    <div class="card roxo"><h3>Hospital · Médico (MI / Cardiologia)</h3>
+      <ul><li>Fenotipagem, eco, etiologia, CIED/GDIT</li><li>FMT no internamento; iSGLT2 intra-hospitalar; plano de 6 semanas</li><li>Critérios Tab. 14/15; CPET/RHC; referenciação a centro IC avançada</li><li>Decisão partilhada, ACP, articulação com paliativos</li></ul></div>
+  </div>
+  <aside class="notes">[18:05–19:35] A matriz detalhada (por etapa e por estádio) está no documento de operacionalização. Pedir a cada grupo profissional que valide a sua coluna até à formação com a Prof.ª Cândida Fonseca.</aside>
+</section>
+
+<!-- 19 · Próximos passos -->
+<section data-timing="60">
+  <span class="kicker amarelo">05 · Próximos passos</span>
+  <h2>O que acontece a seguir</h2>
+  <div class="grid g3">
+    <div class="card amarelo"><h3>1. Formação</h3>Sessão com a <strong>Prof.ª Cândida Fonseca</strong> sobre as ESC 2026 e o PAI — <mark>data a confirmar</mark>. Plano de formação (médicos / enfermeiros, CSP / hospital) já desenhado.</div>
+    <div class="card azul"><h3>2. Revisão dos 56 processos</h3>Fenotipagem, estádio, LIFE, gap de FMT, I NEED HELP. Pares médico-enfermeiro; 8 semanas após a formação.</div>
+    <div class="card verde"><h3>3. Ferramentas</h3>Percurso interativo e dashboard atualizados (hoje) · <strong>GPT assistente PAI-IC</strong> (definição, classificações, prevenção, risco, fenótipos, tratamento, IC avançada, comorbilidades) · tabela de scores · matriz de papéis.</div>
+    <div class="card roxo"><h3>4. Protocolo IC avançada</h3>Protocolo oficial ULSLO de referenciação (Tab. 14/15, Fig. 16, contraindicações Tab. 16) — para validação pela Direção Clínica e pela MI/Cardiologia do HBA.</div>
+    <div class="card coral"><h3>5. Integração digital</h3>Jornada digital do doente (UpHill) — alinhar com os 56 utentes do piloto; registo dos KPIs no dashboard desde o dia 1.</div>
+    <div class="card laranja"><h3>6. Escalar</h3>Após 6 meses de piloto: relatório de KPIs, ajustes e extensão à USF Magnólia e restantes unidades da ULSLO.</div>
+  </div>
+  <aside class="notes">[19:35–20:35] Não comprometer datas que não estão fechadas. Pedir voluntários para rever a matriz de papéis e para testar o GPT assistente.</aside>
+</section>
+
+<!-- 20 · Plano 12 semanas -->
+<section data-timing="75">
+  <span class="kicker amarelo">05 · Operacionalização · plano de 12 semanas</span>
+  <h2>Quem faz o quê até ao arranque (S0 = hoje)</h2>
+  <table class="plan">
+    <tr><th>#</th><th>Ação</th><th>Responsável (proposta)</th><th>Prazo</th></tr>
+    <tr><td>1–3</td><td>Apresentar o PAI atualizado · publicar Percurso 2026.2 e Dashboard · contactar a Prof.ª Cândida Fonseca (carta institucional + contacto pessoal)</td><td>Luís Martins · Dra. Alda Monteiro</td><td>S0–S1</td></tr>
+    <tr><td>4</td><td>Lista nominal e revisão de processos dos 56 utentes — FEVE, NT-proBNP, estádio, fenótipo, NYHA, HFH/SU 12 m, gap de FMT, comorbilidades, I NEED HELP (pares médico-enfermeiro)</td><td>MGF da USF da Ramada + Tiago Condeço</td><td>S1–S8</td></tr>
+    <tr><td>5</td><td>Consultas de inclusão (médica + enfermagem): plano individual, KCCQ-12 basal, LIFE-HF / LIFE-Preserved, plano de FMT — primeiro NYHA III, HFH recente, NT-proBNP mais alto</td><td>Equipa USF da Ramada</td><td>S2–S12</td></tr>
+    <tr><td>6–7</td><td>Canal de otimização da FMT com Consulta de IC / HD (resposta ≤5 dias úteis) · validar o Protocolo de Referenciação em IC Avançada</td><td>Olga Pereira, Ana Reis, Clara Peixoto · Direções Clínicas</td><td>S1–S6</td></tr>
+    <tr><td>8–9</td><td>GPT assistente PAI-IC (12 testes de aceitação) · integração da jornada digital UpHill nos 56 utentes</td><td>Luís Martins + Dr. Pedro Moules e Dr. Gabriel Ferreira (internos de MI)</td><td>S1–S8</td></tr>
+    <tr><td>10–11</td><td>Tronco comum interno (2 h) antes da formação externa · KPIs mensais, reunião quinzenal de 30 min, relatório aos 6 meses com proposta de extensão à USF Magnólia</td><td>Coordenação · Ricardo Cunha</td><td>S2–S3 · S26</td></tr>
+  </table>
+  <div class="footer-src">Documento «Operacionalização do arranque» · Parte 1 (11 ações) · formação com a Prof.ª Cândida Fonseca: 3 datas a propor entre S6 e S10, 2 h 30, Auditório HBA + Teams</div>
+  <aside class="notes">[20:35–21:50] Não ler a tabela: destacar as ações 4 e 5 (o trabalho da USF) e a 6 (o que precisamos do HBA). Pedir voluntários para a revisão de processos em pares. A data da formação externa depende da resposta da Prof.ª Cândida Fonseca.</aside>
+</section>
+
+<!-- 21 · GPT -->
+<section data-timing="60">
+  <span class="kicker amarelo">05 · Operacionalização · ferramenta</span>
+  <h2>GPT assistente PAI-IC — apoio à decisão, não decisão</h2>
+  <div class="grid g3">
+    <div class="card azul"><h3>O que sabe</h3>Base de conhecimento: ESC 2026 (texto integral + suplemento + 5 decks oficiais), Documento PAI-IC e Percurso 2026.2, Protocolo de IC Avançada, tabela de scores, matriz de papéis. Responde com <strong>citação de secção/tabela/página e classe</strong>.</div>
+    <div class="card verde"><h3>10 módulos</h3>Definição e classificações · prevenção (estádios A–B) · predição de risco em IC estabelecida · diagnóstico e fenótipos · IC crónica · IC descompensada · IC avançada · comorbilidades CV · comorbilidades não-CV · programa multidisciplinar e seguimento no PAI.</div>
+    <div class="card coral"><h3>Regras de uso</h3><strong>Nunca dados identificáveis</strong> (nome, n.º SNS, data de nascimento) · não prescreve · diz «não encontrei» em vez de inventar · emergências → SU/112 · só entra em uso depois de <strong>12 testes de aceitação</strong> e validação pela Dra. Olga Pereira.</div>
+  </div>
+  <p class="sm" style="margin-top:.8em">Exemplos de perguntas: «78 anos, dispneia, NT-proBNP 410 — é IC provável?» · «Doses de sacubitril-valsartan e bisoprolol (Tab. 11)» · «Este doente cumpre Tab. 14 e I NEED HELP? Qual o passo seguinte no protocolo?» · «Sou enfermeiro: o que avalio na consulta trimestral e quando escalo?»</p>
+  <div class="footer-src">Documento «Operacionalização do arranque» · Parte 2 (especificação, instruções prontas a colar, testes, governação) · política de IA e conta institucional a confirmar com a ULSLO/DPO</div>
+  <aside class="notes">[21:50–22:50] Enquadrar como «segundo par de olhos» com as guidelines na mão. Pedir 2 médicos + 2 enfermeiros para testar na semana 2. Sublinhar a regra dos dados identificáveis — é a condição para a ULSLO autorizar.</aside>
+</section>
+
+<!-- 22 · Scores -->
+<section data-timing="75">
+  <span class="kicker amarelo">05 · Operacionalização · instrumentos</span>
+  <h2>Scores de risco: qual, quando e por quem</h2>
+  <table class="plan">
+    <tr><th>Instrumento</th><th>Para quê</th><th>Quando · estádio</th><th>Quem aplica</th></tr>
+    <tr><td>SCORE2-HF · SMART2-HF</td><td>Risco de IC a 10 anos (sem / com ASCVD) — conversa de prevenção</td><td>A–B · cada 3–5 anos</td><td>MGF</td></tr>
+    <tr><td>NT-proBNP por idade</td><td>IC provável ≥125 / ≥250 / ≥500 pg/mL (&lt;50 · 50–74 · ≥75 anos)</td><td>Suspeita de IC</td><td>MGF · SU</td></tr>
+    <tr><td>LIFE-HF · LIFE-Preserved</td><td>Risco de HFH ou morte CV a 2–10 anos (FEVE ≤40% · ≥50%)</td><td>C–D · inclusão e anual</td><td>MGF · Consulta IC</td></tr>
+    <tr><td>KCCQ-12 · PHQ-9 · fragilidade</td><td>Estado de saúde (queda ≥5 = risco), depressão, função</td><td>C–D · inclusão, anual (6 m no piloto)</td><td>Enfermagem</td></tr>
+    <tr><td>EHMRG30-ST · SCAI</td><td>Mortalidade 7/30 dias no SU · gravidade do choque</td><td>DHF · fase 1</td><td>SU</td></tr>
+    <tr><td>Checklist pré-alta + LACE</td><td>Congestão residual (I C); risco de readmissão (LACE ≥10)</td><td>Cada alta</td><td>Enf. gestor + médico</td></tr>
+    <tr><td>Regra dos 3 · I NEED HELP</td><td>Alto risco de IC avançada → Consulta IC ≤5 dias úteis</td><td>Cada revisão anual, alta, redução de FMT</td><td>Todos</td></tr>
+    <tr><td>INTERMACS · 6MWT/CPET · NECPAL</td><td>Urgência de terapêuticas avançadas · capacidade funcional · necessidades paliativas</td><td>D · 3–6 m</td><td>Consulta IC · ECSCP · MGF</td></tr>
+  </table>
+  <div class="footer-src">ESC 2026: nenhum score fixa um limiar terapêutico — servem para comunicar risco e decidir seguimento/referenciação (Supl. Secção 1) · tabela completa com variáveis e interpretação na Parte 3 do documento</div>
+  <aside class="notes">[22:50–24:05] Dois scores novos para a MGF (SCORE2-HF e LIFE). No piloto: LIFE-HF/LIFE-Preserved + KCCQ-12 em todos na inclusão; I NEED HELP sempre. Calculadoras oficiais ESC a confirmar e integrar no percurso interativo.</aside>
+</section>
+
+<!-- 23 · Grelha por parâmetro -->
+<section data-timing="60">
+  <span class="kicker amarelo">05 · Operacionalização · papéis</span>
+  <h2>Quem avalia o quê — por parâmetro e frequência</h2>
+  <table class="plan grid-roles">
+    <tr><th>Parâmetro</th><th>Enf. CSP</th><th>Méd. CSP</th><th>Enf. Hosp.</th><th>Méd. Hosp.</th><th>Frequência mínima</th></tr>
+    <tr><td>Peso, PA, FC, FR, SpO₂, edemas, semáforo</td><td>●</td><td>◆</td><td>●</td><td>◆</td><td>Cada contacto</td></tr>
+    <tr><td>NYHA · adesão e reconciliação (AINE)</td><td>◆ / ●</td><td>● / ◆</td><td>◆ / ●</td><td>● / ◆</td><td>Cada consulta · trimestral</td></tr>
+    <tr><td>Educação, vacinação, KCCQ-12, PHQ-9, fragilidade</td><td>●</td><td>○</td><td>◆</td><td>○</td><td>Inclusão · anual</td></tr>
+    <tr><td>ECG · NT-proBNP · análises (TFGe, UACR, K⁺, ferro)</td><td>—</td><td>●</td><td>◆</td><td>●</td><td>6–12 m · 1–2 sem na titulação</td></tr>
+    <tr><td>Ecocardiograma (FEVE, Tab. 10)</td><td>—</td><td>○ pede</td><td>—</td><td>● realiza</td><td>Dx · se deterioração</td></tr>
+    <tr><td>Gap e titulação da FMT (Tab. 11) · ferro EV</td><td>○</td><td>●</td><td>◆ (HD)</td><td>●</td><td>Inclusão · 1–2 sem · semestral</td></tr>
+    <tr><td>LIFE · I NEED HELP · NECPAL · ACP</td><td>◆</td><td>●</td><td>◆</td><td>●</td><td>Anual · cada alta · estádio D</td></tr>
+    <tr><td>Checklist pré-alta · LACE · EHMRG30-ST · INTERMACS</td><td>—</td><td>○</td><td>●</td><td>●</td><td>Cada alta · SU · IC avançada</td></tr>
+  </table>
+  <p class="xs" style="margin-top:.5em">● responsável principal · ◆ participa/regista · ○ interpreta · — não aplicável. Mínimos do PAI: enfermagem trimestral; consulta médica semestral (ESC: 6–12 m no estádio C; 3–6 m no D).</p>
+  <div class="footer-src">Documento «Operacionalização do arranque» · Parte 4 (matriz por momento: suspeita, inclusão, estável, instável, pós-alta, IC avançada; SU, internamento, pré-alta, HD, Consulta IC, Cardiologia, ECSCP)</div>
+  <aside class="notes">[24:05–25:05] Pedir a cada grupo profissional que valide a sua coluna até à formação. A matriz completa por momento (CSP e HBA) está no documento; esta grelha é o resumo.</aside>
+</section>
+
+<!-- 24 · Pontos a confirmar -->
+<section data-timing="45">
+  <span class="kicker coral">05 · Operacionalização · o que falta fechar</span>
+  <h2>Pontos a confirmar antes do arranque</h2>
+  <div class="grid g2">
+    <div class="card coral"><h3>Dependem do HBA / ULSLO</h3>
+      <ul><li>Canal e tempo de resposta da Consulta de IC / HD para o piloto (≤5 dias úteis)</li><li>Centro de IC avançada de referência e via formal de referenciação</li><li>Articulação formal com a ECSCP (critérios, linha 24 h, retaguarda)</li><li>Política de IA generativa e conta institucional (DPO) para o GPT</li><li>Disponibilidade na CFT: finerenona, semaglutido/tirzepatido</li></ul></div>
+    <div class="card amarelo"><h3>Dependem da equipa / externos</h3>
+      <ul><li>Resposta e datas da Prof.ª Cândida Fonseca; Auditório; acreditação</li><li>Lista nominal dos 56 utentes validada pelos médicos de família</li><li>Plano de integração UpHill (elegibilidade, consentimento, go-live)</li><li>Calculadoras oficiais ESC; licença KCCQ-12; NECPAL em português</li><li>Regra do piloto: consulta médica semestral (PAI) ou 6–12 m (ESC)?</li></ul></div>
+  </div>
+  <div class="footer-src">Documento «Operacionalização do arranque» · síntese final «Pontos a confirmar / obter» — cada ponto tem responsável proposto na Parte 1</div>
+  <aside class="notes">[25:05–25:50] Decidir hoje a última pergunta (periodicidade médica do piloto). Os restantes pontos ficam com responsável e prazo na ata.</aside>
+</section>
+
+<!-- 25 · KPIs -->
+<section data-timing="45">
+  <span class="kicker amarelo">05 · Como saberemos que está a funcionar</span>
+  <h2>KPIs do piloto (dos 15 do dashboard)</h2>
+  <div class="grid g4">
+    <div><div class="num azul">≥90%</div><div class="numl">dos 56 fenotipados (IC-FEr / IC-FEp) e com estádio registado</div></div>
+    <div><div class="num verde" style="font-size:2.1em">50→70%</div><div class="numl">com FMT completa (4 pilares FEr · ARM + iSGLT2 FEp) — meta 2026 → 2027 (KPI 10)</div></div>
+    <div><div class="num amarelo">100%</div><div class="numl">com plano individual, folheto semáforo e enfermagem trimestral agendada</div></div>
+    <div><div class="num coral">−20%</div><div class="numl">idas ao SU e hospitalizações por IC a 12 meses vs. 2025 (KPI 1–2)</div></div>
+  </div>
+  <p class="sm" style="margin-top:1em">Mais: consulta pós-alta ≤7 dias · titulação completa às 6 semanas · % com TSAT avaliada e ferro EV quando indicado · KCCQ-12 basal e aos 6 meses (PROM) · satisfação (PREM) · % com I NEED HELP corrido na revisão anual.</p>
+  <div class="footer-src">Dashboard KPIs PAI-IC ULSLO · <a href="https://lmmartins01.github.io/PAI_2026_KPI/">lmmartins01.github.io/PAI_2026_KPI</a></div>
+  <aside class="notes">[25:50–26:35] Os valores são as metas do dashboard. O −20% é a meta institucional; no piloto, com 56 doentes, a leitura será sobretudo qualitativa e de processo.</aside>
+</section>
+
+<!-- 26 · Fecho -->
+<section class="section-bg" data-timing="60">
+  <span class="kicker">Para levar</span>
+  <h2>Três mensagens</h2>
+  <div class="grid g3" style="margin-top:.5em">
+    <div class="card verde" style="font-size:.78em"><h3>1</h3>Dois fenótipos, quatro estádios, um limiar de NT-proBNP por idade. <strong>Fenotipar e estadiar todos os 56.</strong></div>
+    <div class="card azul" style="font-size:.78em"><h3>2</h3>FMT é o padrão: 4 pilares na IC-FEr, ARM + iSGLT2 na IC-FEp, titulação em 1–2 semanas. <strong>Fechar o gap terapêutico.</strong></div>
+    <div class="card roxo" style="font-size:.78em"><h3>3</h3>Enfermagem trimestral, revisão médica semestral, I NEED HELP sempre. <strong>Referenciar IC avançada cedo — e paliativos em paralelo.</strong></div>
+  </div>
+  <p class="quote" style="margin-top:1.2em">"Começamos pequenos, com rigor, para escalar com confiança."</p>
+  <p class="xs" style="margin-top:1.5em">Perguntas · Dr. Luís Martins · USF da Ramada · ULS Loures-Odivelas · Referencial: McDonagh TA et al., Eur Heart J 2026; doi:10.1093/eurheartj/ehag100</p>
+  <aside class="notes">[26:35–28:00] Fechar com as três mensagens e abrir às perguntas. Se houver tempo, mostrar o botão "O que muda com as ESC 2026" no percurso interativo.</aside>
+</section>
+
+</div>
+</div>
+
+<script>
+// Glossário de siglas — gera automaticamente a nota de rodapé em cada slide
+const SIGLAS={
+"IC":"insuficiência cardíaca","IC-FEr":"IC com fração de ejeção reduzida (FEVE <50%)","IC-FEp":"IC com fração de ejeção preservada (FEVE ≥50%)","IC-FEmr":"IC com fração de ejeção ligeiramente reduzida (categoria ESC 2021, eliminada)","FEVE":"fração de ejeção do ventrículo esquerdo","FEr":"fração de ejeção reduzida","FEp":"fração de ejeção preservada",
+"ESC":"European Society of Cardiology","PAI-IC":"Percurso Assistencial Integrado da Insuficiência Cardíaca","PAI":"Percurso Assistencial Integrado","ULSLO":"Unidade Local de Saúde de Loures-Odivelas","USF":"Unidade de Saúde Familiar","HBA":"Hospital Beatriz Ângelo","UCC":"Unidade de Cuidados na Comunidade","ECSCP":"Equipa Comunitária de Suporte em Cuidados Paliativos","CSP":"cuidados de saúde primários","MGF":"Medicina Geral e Familiar","MI":"Medicina Interna","SU":"Serviço de Urgência","HD":"Hospital de Dia","UMR":"Unidade de Monitorização Remota","CA":"Conselho de Administração","CFT":"Comissão de Farmácia e Terapêutica","DPO":"encarregado de proteção de dados","SNS":"Serviço Nacional de Saúde","KPI":"indicador-chave de desempenho","GPT":"assistente de IA generativa (Generative Pre-trained Transformer)","IA":"inteligência artificial","UpHill":"plataforma da jornada digital do doente",
+"NT-proBNP":"fragmento N-terminal do pró-péptido natriurético tipo B","BNP":"péptido natriurético tipo B","PN":"péptidos natriuréticos",
+"FMT":"terapêutica médica fundamental (foundational medical therapy)","AMT":"terapêutica médica adicional","GDMT":"terapêutica médica guiada pelas guidelines (FMT + AMT)","GDIT":"terapêutica intervencional guiada pelas guidelines (dispositivos)",
+"IECA":"inibidor da enzima de conversão da angiotensina","ARNI":"inibidor do recetor da angiotensina e da neprilisina (sacubitril-valsartan)","ARA":"antagonista do recetor da angiotensina II","BB":"beta-bloqueador","ARM":"antagonista dos recetores mineralocorticoides","sMRA":"ARM esteroide","nsMRA":"ARM não esteroide (finerenona)","iSGLT2":"inibidor do cotransportador sódio-glicose 2","GLP-1 RA":"agonista do recetor do GLP-1","GLP-1":"agonista do recetor do péptido semelhante ao glucagon 1","AINE":"anti-inflamatório não esteroide","EV":"endovenoso","bid":"duas vezes por dia","HCTZ":"hidroclorotiazida",
+"DM2":"diabetes mellitus tipo 2","DM":"diabetes mellitus","DRC":"doença renal crónica","HTA":"hipertensão arterial","PAS":"pressão arterial sistólica","PA":"pressão arterial","FC":"frequência cardíaca","FR":"frequência respiratória","SpO₂":"saturação periférica de oxigénio","IMC":"índice de massa corporal","TFGe":"taxa de filtração glomerular estimada","UACR":"razão albumina/creatinina urinária","HbA1c":"hemoglobina glicada","TSAT":"saturação da transferrina","ECG":"eletrocardiograma","Rx":"radiografia","K⁺":"potássio","Na⁺":"sódio",
+"LVMI":"índice de massa do ventrículo esquerdo","RWT":"espessura relativa da parede","AE":"aurícula esquerda","E/e′":"razão entre a velocidade E mitral e a velocidade e′ do anel","PSAP":"pressão sistólica da artéria pulmonar","TRV":"velocidade de regurgitação tricúspide","VD":"ventrículo direito","VE":"ventrículo esquerdo","RS":"ritmo sinusal",
+"NYHA":"classe funcional da New York Heart Association","HFH":"hospitalização por insuficiência cardíaca","DHF":"IC descompensada (decompensated heart failure)","EAP":"edema agudo do pulmão","SCAI":"classificação de choque cardiogénico da Society for Cardiovascular Angiography and Interventions","CDI":"cardioversor-desfibrilhador implantável","TRC":"terapêutica de ressincronização cardíaca","CIED":"dispositivo cardíaco eletrónico implantável","LVAD":"dispositivo de assistência ventricular esquerda","MCS":"suporte circulatório mecânico","CPET":"prova de esforço cardiopulmonar","RHC":"cateterismo cardíaco direito","pVO₂":"consumo máximo de oxigénio","6MWT":"prova de marcha de 6 minutos","INTERMACS":"perfis do Interagency Registry for Mechanically Assisted Circulatory Support","ACP":"planeamento antecipado de cuidados","DAV":"diretiva antecipada de vontade","NECPAL":"instrumento de identificação de necessidades paliativas (NECPAL CCOMS-ICO©)","KCCQ-12":"Kansas City Cardiomyopathy Questionnaire, 12 itens","PHQ-9":"Patient Health Questionnaire-9 (rastreio de depressão)","PROM":"resultado reportado pelo doente","PREM":"experiência reportada pelo doente","CROM":"resultado reportado pelo clínico","LACE":"índice de risco de readmissão (Length of stay, Acuity, Comorbidity, Emergency visits)","EHMRG30-ST":"Emergency Heart Failure Mortality Risk Grade (7 e 30 dias)","SCORE2-HF":"score ESC de risco de IC a 10 anos sem doença aterosclerótica","SMART2-HF":"score ESC de risco de IC a 10 anos com doença aterosclerótica","LIFE-HF":"score ESC de risco em IC-FEr (FEVE ≤40%)","LIFE-Preserved":"score ESC de risco em IC-FEp (FEVE ≥50%)","MAGGIC":"Meta-Analysis Global Group in Chronic Heart Failure (score)","SHFM":"Seattle Heart Failure Model","ASCVD":"doença cardiovascular aterosclerótica","STRONG-HF":"ensaio de titulação intensiva nas 6 semanas pós-alta","HF-MDT":"equipa multidisciplinar de IC","MDT":"equipa multidisciplinar",
+"FA":"fibrilhação auricular","AVC":"acidente vascular cerebral","DPOC":"doença pulmonar obstrutiva crónica","SAOS":"síndrome de apneia obstrutiva do sono","OSA":"apneia obstrutiva do sono","CSA":"apneia central do sono","ASV":"servoventilação adaptativa","VSR":"vírus sincicial respiratório","COVID-19":"doença por coronavírus 2019","CV":"cardiovascular","EAM":"enfarte agudo do miocárdio","DAC":"doença arterial coronária","DAP":"doença arterial periférica","TUG":"teste Timed Up and Go","Dx":"diagnóstico","MCDT":"meios complementares de diagnóstico e terapêutica","CTH":"Consulta a Tempo e Horas","RGPD":"Regulamento Geral sobre a Proteção de Dados","QoL":"qualidade de vida","Teams":"Microsoft Teams","S0":"semana 0 (data da reunião de equipa)"
+};
+(function(){
+  const keys=Object.keys(SIGLAS).sort((a,b)=>b.length-a.length).map(k=>k.replace(/[.*+?^${}()|[\]\\\/]/g,'\\$&'));
+  const re=new RegExp('(?<![A-Za-z0-9À-ÿ₂⁺′-])('+keys.join('|')+')(?![A-Za-z0-9À-ÿ₂⁺′])','g');
+  document.querySelectorAll('.reveal .slides section').forEach((s,i)=>{
+    const clone=s.cloneNode(true); clone.querySelectorAll('aside.notes,.siglas').forEach(e=>e.remove());
+    const txt=clone.textContent; const seen=[]; let m;
+    re.lastIndex=0; while((m=re.exec(txt))){ if(!seen.includes(m[1])) seen.push(m[1]); }
+    if(!seen.length) return;
+    const div=document.createElement('div'); div.className='siglas';
+    div.innerHTML='<b>Siglas:</b> '+seen.map(k=>'<b>'+k+'</b> — '+SIGLAS[k]).join(' · ');
+    const notes=s.querySelector('aside.notes'); if(notes) s.insertBefore(div,notes); else s.appendChild(div);
+  });
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
+<script>
+Reveal.initialize({
+  hash:true, slideNumber:'c/t', progress:true, controls:true, center:true,
+  width:1280, height:720, margin:0.06,
+  transition:'slide', backgroundTransition:'fade',
+  defaultTiming:60, totalTime:1500,
+  plugins:[RevealNotes]
+});
+</script>
+</body>
+</html>
